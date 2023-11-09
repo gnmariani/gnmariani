@@ -1,0 +1,15 @@
+{
+  "name": "gnmariani",
+  "version": "1.0.0",
+  "description": "Splash page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gina N Mariani",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

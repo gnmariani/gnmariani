@@ -1,0 +1,32 @@
+# Ignore common items
+.DS_Store
+.vscode/
+.env
+.env.local
+logs/
+cache/
+
+# Ignore 11ty output directory
+/dist
+_site
+
+# Ignore Eleventy cache directory
+.cache/
+
+# Ignore development server files
+.eleventy.js
+.env.*
+
+# Ignore Node.js and NPM related files
+node_modules
+package-lock.json
+
+# Firebase configuration files
+.firebaserc
+firebase.json
+firebase-debug.log
+
+# GitHub Actions-specific items
+/.github/
+!/.github/workflows/
+!.github/workflows/deploy-firebase.yml
