@@ -22,11 +22,11 @@ node_modules
 package-lock.json
 
 # Firebase configuration files
-.firebaserc
-firebase.json
+#.firebaserc
+#firebase.json
 firebase-debug.log
 
 # GitHub Actions-specific items
-/.github/
+#/.github/
 !/.github/workflows/
 !.github/workflows/deploy-firebase.yml
