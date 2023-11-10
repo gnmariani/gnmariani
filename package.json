@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npx @11ty/eleventy --serve & npx tailwindcss -i src/css/tailwind.css -c src/css/tailwind.config.js -o dist/css/style.css --watch --postcss",
     "build": "npx @11ty/eleventy & npx tailwindcss -i src/css/tailwind.css -c src/css/tailwind.config.js -o dist/css/style.css --minify",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "clean": "rm -rf _site && rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
