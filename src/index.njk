@@ -4,13 +4,10 @@ layout: "base.njk"
 ---
 
 {% block content %}
-{% include "about.njk" %}
-
-  <div class="fixed inset-0 flex justify-center items-center">
+  <main class="grid-main">
+    {% include "about.njk" %}
+  </main>
+  <div class="grid-side">
     {% include "skills.njk" %}
-    <div>
-      <span class="text-change">Good design and new</span><br/>
-      <span class="change">is<br/>as little design<br/>as possible</span>
-    </div>
   </div>
 {% endblock %}
