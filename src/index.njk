@@ -1,12 +1,13 @@
 ---
-title: "Portfolio"
+title: "Gina Mariani"
 layout: "base.njk"
 ---
 
-<h1>{{ title }} Home Page</h1>
-
 {% block content %}
+{% include "about.njk" %}
+
   <div class="fixed inset-0 flex justify-center items-center">
+    {% include "skills.njk" %}
     <div>
       <span class="text-change">Good design and new</span><br/>
       <span class="change">is<br/>as little design<br/>as possible</span>
