@@ -37,6 +37,8 @@ module.exports = function (eleventyConfig) {
     return Image.generateHTML(metadata, imageAttributes);
   }
 
+  eleventyConfig.addNunjucksAsyncShortcode("EleventyImage", imageShortcode);
+
   return {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
