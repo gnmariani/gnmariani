@@ -4,10 +4,12 @@ layout: "base.njk"
 ---
 
 {% block content %}
-  <main class="grid-main">
+
+  <main class="grid-layout-main p-5 md:p-0">
     {% include "about.njk" %}
   </main>
-  <div class="grid-side">
+  <div class="grid-layout-side p-5 md:p-0">
     {% include "skills.njk" %}
   </div>
+
 {% endblock %}

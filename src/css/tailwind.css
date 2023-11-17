@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 @layer components {
-  .grid-head {
+  .grid-layout-head {
     grid-area: header;
   }
 
-  .grid-main {
+  .grid-layout-main {
     grid-area: content;
   }
 
-  .grid-side {
+  .grid-layout-side {
     grid-area: side;
   }
 
-  .grid-footer {
+  .grid-layout-footer {
     grid-area: footer;
   }
 
-  .grid-wrapper {
+  .grid-layout-wrapper {
     grid-template-areas:
       "header"
       "content"
@@ -28,7 +28,7 @@
   }
 
   @media (min-width: 768px) {
-    .grid-wrapper {
+    .grid-layout-wrapper {
       grid-template-areas:
         "header header header header header"
         "content content content side side"

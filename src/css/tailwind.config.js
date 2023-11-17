@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateRows: {
-        layout: "auto 1fr auto", //TODO: MODIFY THIS TO INCREASE SIZE OF FOOTER (SPECIALLY FOR LARGER SCREENS)
+        layout: "auto 1fr minmax(8rem, auto)",
       },
     },
     colors: {
