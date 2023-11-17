@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .grid-layout-head {
+    grid-area: header;
+  }
+
+  .grid-layout-main {
+    grid-area: content;
+  }
+
+  .grid-layout-side {
+    grid-area: side;
+  }
+
+  .grid-layout-footer {
+    grid-area: footer;
+  }
+
+  .grid-layout-wrapper {
+    grid-template-areas:
+      "header"
+      "content"
+      "side"
+      "footer";
+  }
+
+  @media (min-width: 768px) {
+    .grid-layout-wrapper {
+      grid-template-areas:
+        "header header header header header"
+        "content content content side side"
+        "footer footer footer footer footer";
+    }
+  }
+}

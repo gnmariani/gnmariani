@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="I'm a Frontend software developer."/>
     <link rel="stylesheet" href="css/style.css?v={% version %}"/>
+    {% for icon in favIconList %}
+      <link rel="{{icon.rel}}" type="{{icon.type}}" href="{{icon.href}}" sizes="{{icon.sizes}}">
+    {% endfor %}
+    <link rel="manifest" href="/site.webmanifest">
     <title>Gina M</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,600;0,9..40,900;1,9..40,300&display=swap');
     </style>
   </head>
-  <body>
-    {% include "header.njk" %}
-    <main class="main container">
+  <body class="[height:100dvh] m-0">
+    <div class="[height:100dvh] grid grid-layout-wrapper grid-rows-layout md:grid-cols-5">
+      {% include "header.njk" %}
       {% block content %}
         {{ content | safe }}
       {% endblock %}
-    </main>
-    {% include "footer.njk" %}
+      {% include "footer.njk" %}
+    </div>
   </body>
 </html>
