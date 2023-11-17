@@ -23,8 +23,10 @@ package-lock.json
 
 # Firebase configuration files
 #.firebaserc
-#firebase.json
 firebase-debug.log
+
+#Firebase cache
+.firebase/*
 
 # GitHub Actions-specific items
 #/.github/
