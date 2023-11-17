@@ -50,6 +50,7 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "dist",
       layouts: "_layouts",
+      data: "_data",
     },
   };
 };
