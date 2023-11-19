@@ -41,6 +41,17 @@ module.exports = function (eleventyConfig) {
   }
 
   eleventyConfig.addNunjucksAsyncShortcode("EleventyImage", imageShortcode);
+
+  eleventyConfig.addShortcode(
+    "socialLink",
+    function (className, name, icon, href) {
+      return `
+      <a class="${className} focus-visible:ring" href="${href}" target="_blank" aria-label="${name}">
+        <svg class="w-[40px] h-[40px]" aria-hidden="true"><use href="${icon}"/></svg>
+      </a>
+    `;
+    }
+  );
   // 11ty Settings -----------------------------------
   return {
     markdownTemplateEngine: "njk",
