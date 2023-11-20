@@ -1,0 +1,50 @@
+[
+  {
+    "name": "HTML",
+    "icon": "assets/icons.svg#html"
+  },
+  {
+    "name": "Markdown",
+    "icon": "assets/icons.svg#markdown"
+  },
+  {
+    "name": "CSS",
+    "icon": "assets/icons.svg#css"
+  },
+  {
+    "name": "SCSS",
+    "icon": "assets/icons.svg#scss"
+  },
+  {
+    "name": "Accessability",
+    "icon": "assets/icons.svg#a11y"
+  },
+  {
+    "name": "Javascript",
+    "icon": "assets/icons.svg#js"
+  },
+  {
+    "name": "React",
+    "icon": "assets/icons.svg#react"
+  },
+  {
+    "name": "Angular",
+    "icon": "assets/icons.svg#angular"
+  },
+  {
+    "name": "Mobile first responsive design",
+    "icon": "assets/icons.svg#mobile"
+  },
+  {
+    "name": "Jira",
+    "icon": "assets/icons.svg#jira"
+  },
+  {
+    "name": "Figma",
+    "icon": "assets/icons.svg#figma"
+  },
+  {
+    "name": "Cross functional team collaboration",
+    "icon": "assets/icons.svg#group"
+  }
+]
