@@ -4,12 +4,21 @@ layout: "base.njk"
 ---
 
 {% block content %}
-
-  <main class="grid-layout-main p-5 md:p-0">
-    {% include "about.njk" %}
+  <main class="grid-layout-main max-w-screen-lg p-5 lg:m-auto lg:mt-28 lg:flex lg:gap-x-8 xl:p-0">
+    <div class="lg:grid lg:gap-y-6">
+      {% include "about.njk" %}
+      <div class="my-4 lg:hidden">
+        {% include "image.webc" %}
+      </div>
+      {% include "skills.njk" %}
+      {% include "experience.njk" %}
+    </div>
+    <div class="hidden lg:block lg:mt-12">
+      {% include "image.webc" %}
+      <div class="my-4">
+        {% include "links.njk" %}
+      </div>
+    </div>
   </main>
-  <div class="grid-layout-side p-5 md:p-0">
-    {% include "skills.njk" %}
-  </div>
 
 {% endblock %}
