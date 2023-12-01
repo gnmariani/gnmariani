@@ -1,6 +1,6 @@
-<ul class="flex gap-3 m-auto lg:ml-0">
+<ul class="flex gap-3 m-auto max-w-fit lg:ml-0">
     {% for link in socialLinks %}
-        <li class="flex-none h-[40px] w-[40px]">
+        <li class="flex-none h-[40px] w-[40px] hover:drop-shadow-xl">
             {% socialLink "link",
             link.name,
             link.icon,
