@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
 module.exports = {
-  content: ["./src/**/*.{html,js,njk}"],
+  content: ["./src/**/*.{html,js,njk,webc}"],
   theme: {
     extend: {
       gridTemplateRows: {

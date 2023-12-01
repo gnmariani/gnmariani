@@ -1,4 +1,6 @@
-const Image = require("@11ty/eleventy-img");
+const eleventyWebcPlugin = require("@11ty/eleventy-plugin-webc");
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
+const { eleventyImagePlugin } = require("@11ty/eleventy-img");
 const date = new Date();
 const now = String(Date.now());
 const fullYear = date.getFullYear();
@@ -7,6 +9,25 @@ module.exports = function (eleventyConfig) {
   // Input directory: src
   // Output directory: dist
 
+  // Plugins -------------------------------------
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
+  // WebC
+  eleventyConfig.addPlugin(eleventyWebcPlugin, {
+    components: ["npm:@11ty/eleventy-img/*.webc", "_includes/*.webc"],
+  });
+  // Image plugin
+  eleventyConfig.addPlugin(eleventyImagePlugin, {
+    // Set global default options
+    formats: ["webp", "jpeg", "avif"],
+    urlPath: "/assets/",
+    // Notably `outputDir` is resolved automatically
+    // to the project output directory
+
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+    },
+  });
   // WatchTarget -------------------------------------
   eleventyConfig.addWatchTarget("src/css/tailwind.config.js");
   eleventyConfig.addWatchTarget("src/css/tailwind.css");
@@ -21,26 +42,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", function () {
     return fullYear;
   });
-
-  async function imageShortcode(src, alt, sizes) {
-    let metadata = await Image(`./src${src}`, {
-      widths: [300, 800, null],
-      formats: ["avif", "jpeg"],
-      urlPath: "/assets/",
-      outputDir: "./dist/assets/",
-    });
-
-    let imageAttributes = {
-      alt,
-      sizes,
-      loading: "lazy",
-      decoding: "async",
-    };
-
-    return Image.generateHTML(metadata, imageAttributes);
-  }
-
-  eleventyConfig.addNunjucksAsyncShortcode("EleventyImage", imageShortcode);
 
   eleventyConfig.addShortcode(
     "socialLink",

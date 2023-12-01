@@ -11,10 +11,6 @@
     grid-area: content;
   }
 
-  .grid-layout-side {
-    grid-area: side;
-  }
-
   .grid-layout-footer {
     grid-area: footer;
   }
@@ -23,16 +19,15 @@
     grid-template-areas:
       "header"
       "content"
-      "side"
       "footer";
   }
 
   @media (min-width: 768px) {
     .grid-layout-wrapper {
       grid-template-areas:
-        "header header header header header"
-        "content content content side side"
-        "footer footer footer footer footer";
+        "header header header"
+        "content content content"
+        "footer footer footer";
     }
   }
 }
