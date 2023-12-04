@@ -1,15 +1,14 @@
-<section>
+<section class="max-w-fit md:max-w-none">
     <h2 class="my-4 text-jade-powder uppercase font-medium">Skills</h2>
-    <p class="font-normal text-lg lg:text-2xl">Multidisciplinary Front-end engineer</p>
-    <ul class="mt-2.5 grid grid-cols-2  grid-flow-row gap-4 lg:grid-cols-4">
+    <h3 class="font-normal text-lg lg:text-2xl">Multidisciplinary Front-end engineer</h3>
+    <ul class="mt-2.5 grid grid-cols-2 grid-flow-row gap-4 lg:grid-cols-4">
         {% for skill in skillList %}
-            <li class="flex flex-wrap items-center gap-x-4">
+            <li class="flex flex-wrap items-center gap-x-4 {{skill.class}}">
                 <div class="w-[35px] h-[35px]">
                     <svg class="w-[35px] h-[35px]" aria-hidden="true"><use href="{{skill.icon}}"/></svg>
                 </div>
                 <p class="flex-1">{{skill.name}}</p>
             </li>
-
         {% endfor %}
     </ul>
 </section>

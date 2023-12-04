@@ -1,5 +1,5 @@
 {% renderTemplate "webc" %}
-<div class="drop-shadow-lg w-[350px] h-[350px] m-auto overflow-hidden rounded-lg">
+<div class="drop-shadow-lg overflow-hidden rounded-lg">
     <eleventy-image with="222, 350" sizes="(min-width: 43.75em) 100px, 15vw" src="./src/assets/main_hike.jpg" alt="Gina with her dog Ody"></eleventy-image>
 </div>
 {% endrenderTemplate %}

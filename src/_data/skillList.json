@@ -41,10 +41,12 @@
   },
   {
     "name": "Mobile first responsive design",
-    "icon": "assets/icons.svg#mobile"
+    "icon": "assets/icons.svg#mobile",
+    "class": "col-span-2"
   },
   {
     "name": "Cross functional team collaboration",
-    "icon": "assets/icons.svg#group"
+    "icon": "assets/icons.svg#group",
+    "class": "col-span-2 "
   }
 ]
