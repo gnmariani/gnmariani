@@ -43,16 +43,13 @@ module.exports = function (eleventyConfig) {
     return fullYear;
   });
 
-  eleventyConfig.addShortcode(
-    "socialLink",
-    function (className, name, icon, href) {
-      return `
-      <a class="${className} focus-visible:ring" href="${href}" target="_blank" aria-label="${name}">
-        <svg class="w-[40px] h-[40px]" aria-hidden="true"><use href="${icon}"/></svg>
+  eleventyConfig.addShortcode("socialLink", function (name, icon, href) {
+    return `
+      <a class="focus-visible:ring" href="${href}" target="_blank" aria-label="${name}">
+        <svg class="w-[40px] h-[40px] text-current" aria-hidden="true"><use href="${icon}"/></svg>
       </a>
     `;
-    }
-  );
+  });
   // 11ty Settings -----------------------------------
   return {
     markdownTemplateEngine: "njk",

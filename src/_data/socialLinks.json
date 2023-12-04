@@ -10,11 +10,6 @@
     "icon": "assets/icons.svg#github"
   },
   {
-    "href": "https://codepen.io/GVisualworks",
-    "name": "Codepen",
-    "icon": "assets/icons.svg#codepen"
-  },
-  {
     "href": "mailto:gina.nvillarreal@gmail.com",
     "name": "Email",
     "icon": "assets/icons.svg#mail"

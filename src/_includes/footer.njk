@@ -1,5 +1,15 @@
 <footer class="grid-layout-footer p-5 bg-jade-powder flex flex-col text-center lg:flex-row lg:justify-between lg:text-end lg:px-20">
-      {% include "links.njk" %}
+      <div class="text-bright-white">
+            <ul class="flex gap-3 m-auto max-w-fit">
+                  {% include "links.njk" %}
+                  <li class="flex-none h-[40px] w-[40px] hover:drop-shadow-xl">
+                        {% socialLink "Codepen",
+                        "assets/icons.svg#codepen",
+                        "https://codepen.io/GVisualworks" %}
+                  </li>
+
+            </ul>
+      </div>
       <div class="my-5">
             <p class="text-bright-white">made by yours truly</p>
             <p class="text-bright-white">designed by Janina Yutkins-Kennedy</p>

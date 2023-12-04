@@ -3,9 +3,15 @@
   <h1 class="text-4xl font-semibold">{{ title }}</h1>
   <h2 class="text-xl font-normal">Front-end engineer based in Boston, MA.</h2>
 </div>
-<div class="my-4 lg:hidden">
+<ul class="flex gap-3 m-auto max-w-fit my-4 text-jade-powder lg:hidden">
   {% include "links.njk" %}
-</div>
+  <li class="flex-none h-[40px] w-[40px] hover:drop-shadow-xl">
+    {% socialLink "Codepen",
+      "assets/icons.svg#codepen-white",
+      "https://codepen.io/GVisualworks"
+    %}
+  </li>
+</ul>
 <div class="grid gap-y-6">
   <p>Hi, I'm Gina, a front-end engineer with a passion for UI and web accessibility. As a Latina, learning English I understood how important visual cues are for navigating the world around you. This incited me to go to school to learn about visual communication. Now as a professional I love to create engaging and functional web experiences for diverse audiences.</p>
   <p>While being a developer by daylight, by moonlight: I enjoy playing D&D, board games, and video games; I also have a large plant collection that requires more attention than I expected and my dog Ody who also requires a lot of attention, however, this was expected.</p>
