@@ -15,9 +15,16 @@ layout: "base.njk"
     </div>
     <div class="hidden lg:block lg:mt-12">
       {% include "image.webc" %}
-      <div class="my-4">
+      <ul class="flex gap-3 m-auto max-w-fit my-4 text-jade-powder">
         {% include "links.njk" %}
-      </div>
+        <li class="flex-none h-[40px] w-[40px] hover:drop-shadow-xl">
+          {% socialLink "Codepen",
+      "assets/icons.svg#codepen-white",
+      "https://codepen.io/GVisualworks"
+    %}
+        </li>
+      </ul>
+
     </div>
   </main>
 
