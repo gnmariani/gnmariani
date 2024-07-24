@@ -8,6 +8,13 @@ module.exports = {
         layout: "auto 1fr minmax(8rem, auto)",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
