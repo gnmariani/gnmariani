@@ -1,6 +1,6 @@
 {
   "name": "gnmariani",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Personal splash page",
   "main": "index.js",
   "scripts": {
@@ -15,16 +15,16 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.8",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "@types/11ty__eleventy-img": "^4.0.0",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5",
-    "@11ty/eleventy-img": "^3.1.8",
-    "@11ty/eleventy-plugin-webc": "^0.11.1",
-    "sharp": "^0.32.6"
+    "sharp": "^0.32.6",
+    "tailwindcss": "^3.3.5"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^3.1.8",
-    "@11ty/eleventy-plugin-webc": "^0.11.1",
     "sharp": "^0.32.6"
   }
 }
