@@ -1,4 +1,4 @@
-const eleventyWebcPlugin = require("@11ty/eleventy-plugin-webc");
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const { eleventyImagePlugin } = require("@11ty/eleventy-img");
 const date = new Date();
@@ -12,9 +12,7 @@ module.exports = function (eleventyConfig) {
   // Plugins -------------------------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   // WebC
-  eleventyConfig.addPlugin(eleventyWebcPlugin, {
-    components: ["npm:@11ty/eleventy-img/*.webc", "_includes/*.webc"],
-  });
+  eleventyConfig.addPlugin(pluginWebc);
   // Image plugin
   eleventyConfig.addPlugin(eleventyImagePlugin, {
     // Set global default options

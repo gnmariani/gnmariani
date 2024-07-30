@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm install & npx @11ty/eleventy & npx tailwindcss -i src/css/tailwind.css -c src/css/tailwind.config.js -o dist/css/style.css --minify
+      - run: npm install & npx @11ty/eleventy & npx tailwindcss -i ./src/css/tailwind.css -c ./src/css/tailwind.config.js -o ./dist/css/style.css --minify
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"

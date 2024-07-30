@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "Personal splash page",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "npx @11ty/eleventy --serve & npx tailwindcss -i src/css/tailwind.css -c src/css/tailwind.config.js -o dist/css/style.css --watch --postcss",
     "build": "npx @11ty/eleventy & npx tailwindcss -i src/css/tailwind.css -c src/css/tailwind.config.js -o dist/css/style.css --minify",
