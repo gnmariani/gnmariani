@@ -5,11 +5,10 @@ layout: "base.njk"
 
 {% block content %}
   <main class="grid-layout-main ">
-    <section class="w-full max-w-screen-md mx-auto bg-[url('/assets/pexels-buchkiste-wrinkle.jpg')] bg-contain">
-      {% include "about.njk" %}
-      {# {% include "image.webc" %} #}
+    <section class="mx-auto max-w-[640px] bg-cover bg-center bg-[url('/assets/pexels-ruvim-light.jpg')]">
+      <div class="h-dvh p-5 grid grid-rows-[80px_repeat(3,_1fr)] sm:mb-8 sm:grid-cols-[100px_repeat(4,_1fr)] sm:grid-rows-[100px_minmax(450px,_1fr)_200px]">
+        {% include "about.njk" %}
+      </div>
     </section>
-
   </main>
-
 {% endblock %}
