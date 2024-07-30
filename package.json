@@ -18,10 +18,10 @@
     "@11ty/eleventy-img": "^3.1.8",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
     "@types/11ty__eleventy-img": "^4.0.0",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
     "sharp": "^0.32.6",
-    "tailwindcss": "^3.3.5"
+    "tailwindcss": "^3.4.7"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^3.1.8",
